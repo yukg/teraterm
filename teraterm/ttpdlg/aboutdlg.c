@@ -47,10 +47,10 @@
 
 // Oniguruma: Regular expression library
 #define ONIG_STATIC
-#include "oniguruma.h"
+//#include "oniguruma.h"
 
 // SFMT: SIMD-oriented Fast Mersenne Twister
-#include "SFMT_version_for_teraterm.h"
+//#include "SFMT_version_for_teraterm.h"
 
 #include "ttdlg.h"
 
@@ -291,12 +291,12 @@ static INT_PTR CALLBACK AboutDlg(HWND Dialog, UINT Message, WPARAM wParam, LPARA
 			SetDlgItemTextA(Dialog, IDC_TT_VERSION, buf);
 
 			// Onigurumaのバージョン
-			_snprintf_s(buf, sizeof(buf), _TRUNCATE, "Oniguruma %s", onig_version());
-			SetDlgItemTextA(Dialog, IDC_ONIGURUMA_LABEL, buf);
+			//_snprintf_s(buf, sizeof(buf), _TRUNCATE, "Oniguruma %s", onig_version());
+			//SetDlgItemTextA(Dialog, IDC_ONIGURUMA_LABEL, buf);
 
 			// SFMTのバージョンを設定する
-			_snprintf_s(buf, sizeof(buf), _TRUNCATE, "SFMT %s", SFMT_VERSION);
-			SetDlgItemTextA(Dialog, IDC_SFMT_VERSION, buf);
+	/*		_snprintf_s(buf, sizeof(buf), _TRUNCATE, "SFMT %s", SFMT_VERSION);
+			SetDlgItemTextA(Dialog, IDC_SFMT_VERSION, buf);*/
 
 			// build info
 			{

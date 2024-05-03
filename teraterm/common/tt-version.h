@@ -39,7 +39,7 @@
 #define TT_TOSTR_HELPER(x)			#x
 #define TT_VERSION_STR(sep)			TT_TOSTR(TT_VERSION_MAJOR) sep TT_TOSTR(TT_VERSION_MINOR)
 
-#include "svnversion.h"
+//#include "svnversion.h"
 
 // TT_VERSION_SUBSTR_HASH
 //		TT_VERSION_SUBSTR + (GITVERSION or SVNVERSION)
